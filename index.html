@@ -235,6 +235,46 @@
 .footer-bottom{border-top:1px solid #ffffff12;padding:18px 0 24px;display:flex;justify-content:space-between;gap:20px;color:#78869e;font-size:12px}
 @media(max-width:760px){.footer-top{grid-template-columns:1fr;gap:34px;padding:40px 0 32px}.legal-links{gap:13px 18px}.footer-bottom{flex-direction:column;gap:8px}}
 
+
+/* Premium, restrained light sweep for hero calls to action */
+.hero-actions .btn{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  transform:translateZ(0);
+}
+.hero-actions .btn > span{position:relative;z-index:2}
+.hero-actions .btn:after{
+  content:"";
+  position:absolute;
+  z-index:1;
+  top:-45%;
+  bottom:-45%;
+  left:-42%;
+  width:34%;
+  pointer-events:none;
+  transform:translateX(-230%) skewX(-22deg);
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.10) 28%,rgba(255,255,255,.62) 50%,rgba(255,255,255,.12) 72%,transparent);
+  filter:blur(1px);
+  animation:heroButtonSweep 6.8s cubic-bezier(.22,.61,.36,1) infinite;
+}
+.hero-actions .secondary:after{
+  background:linear-gradient(90deg,transparent,rgba(151,190,255,.08) 28%,rgba(180,211,255,.42) 50%,rgba(151,190,255,.08) 72%,transparent);
+}
+.hero-actions .secondary{box-shadow:inset 0 0 0 1px rgba(151,190,255,.025)}
+.hero-actions .primary:hover{box-shadow:0 15px 42px #5789e555,0 0 24px rgba(117,164,255,.18)}
+.hero-actions .secondary:hover{border-color:rgba(145,184,255,.34);box-shadow:0 12px 34px rgba(44,84,145,.16)}
+@keyframes heroButtonSweep{
+  0%,12%{transform:translateX(-230%) skewX(-22deg);opacity:0}
+  18%{opacity:.9}
+  42%{transform:translateX(520%) skewX(-22deg);opacity:.65}
+  43%,100%{transform:translateX(520%) skewX(-22deg);opacity:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-actions .btn:after{animation:none;display:none}
+  .hero-actions .btn{transition:none}
+}
+
 </style>
 <script type="application/ld+json">
 {
