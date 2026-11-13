@@ -303,6 +303,23 @@
   .hero-actions .btn:after{animation:none;display:none}
 }
 
+
+/* Frequently asked questions */
+.faq-section{padding:72px 0 78px;scroll-margin-top:30px}
+.faq-heading{text-align:center;max-width:650px;margin:0 auto 30px}
+.faq-heading p{color:var(--muted);font-size:14px;line-height:1.7;margin:10px auto 0}
+.faq-list{max-width:850px;margin:0 auto;display:grid;gap:11px}
+.faq-item{border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#121b2a,#0c121d);overflow:hidden;transition:border-color .25s ease,background .25s ease}
+.faq-item[open]{border-color:#83a9ee55;background:linear-gradient(145deg,#152136,#0e1521)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:19px 21px;color:#edf3ff;font:600 15px 'Space Grotesk'}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:'+';width:26px;height:26px;flex:0 0 26px;display:grid;place-items:center;border:1px solid #ffffff20;border-radius:50%;color:#a9c9ff;font:400 18px 'DM Sans';transition:transform .25s ease,background .25s ease}
+.faq-item[open] summary:after{content:'−';background:#8cb4ff16;transform:rotate(180deg)}
+.faq-answer{padding:0 21px 19px;color:#a5b3c7;font-size:13px;line-height:1.8;max-width:760px}
+.faq-item summary:focus-visible{outline:2px solid #8db6ff;outline-offset:-4px;border-radius:12px}
+@media(max-width:560px){.faq-section{padding:55px 0 60px}.faq-item summary{padding:17px;font-size:14px}.faq-answer{padding:0 17px 17px;font-size:13px}}
+@media(prefers-reduced-motion:reduce){.faq-item,.faq-item summary:after{transition:none}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -329,7 +346,7 @@
 </script>
 </head>
 <body><div class="noise"></div>
-<header class="wrap nav"><a class="brand" href="/"><span class="mark">C</span><span class="brandname">CFX STUDIOS</span></a><nav class="navlinks"><a href="#platforms">Platforms</a><a href="#about">About</a><a href="#connect" class="nav-cta">Connect with us ↗</a></nav></header>
+<header class="wrap nav"><a class="brand" href="/"><span class="mark">C</span><span class="brandname">CFX STUDIOS</span></a><nav class="navlinks"><a href="#platforms">Platforms</a><a href="#about">About</a><a href="#faqs">FAQs</a><a href="#connect" class="nav-cta">Connect with us ↗</a></nav></header>
 <main id="top">
 <section class="hero wrap"><div class="eyebrow"><span class="dot"></span> THE CFX ECOSYSTEM</div><h1>Every Editor Needs a<br><span>Friend.</span></h1><p>Get ScenePacks, editing software, plugins, 4K movies and a video downloader — all in one place, built around your creative journey.</p><div class="hero-actions"><a class="btn primary" href="#platforms">Get ScenePacks <span>↗</span></a><a class="btn secondary" href="#platforms">Get 4K Movies <span>↗</span></a></div><div class="hero-ecosystem-strip" aria-label="Explore the CFX ecosystem">
   <div class="ecosystem-mini"><span class="mini-icon">✳</span><span class="mini-title">ScenePacks</span></div>
@@ -367,6 +384,25 @@
 </article>
 </div></section>
 <section class="section wrap" id="about"><div class="about reveal"><div><div class="kicker">About CFX Studios</div><h2>What is CFX Studios?</h2><p>CFX Studios is one place to find all our projects. You can explore video-editing packs and creative tools, browse movies, and learn about our video downloader for Windows and Android.</p><p>Choose a project and go straight to what you need. It’s that simple.</p></div><div class="about-visual"><div class="about-logo">C</div></div></div><div class="values reveal"><div class="value"><strong>Tools for creators</strong><small>Find editing packs, presets, plugins and other useful resources.</small></div><div class="value"><strong>Movies to explore</strong><small>Browse movie titles, languages, genres and collections.</small></div><div class="value"><strong>More to come</strong><small>Discover new CFX projects and updates as we grow.</small></div></div></section>
+
+<section class="faq-section wrap" id="faqs">
+  <div class="faq-heading">
+    <div class="kicker">NEED TO KNOW?</div>
+    <h2>Frequently Asked Questions</h2>
+    <p>Quick answers about CFX Studios and the platforms you can explore here.</p>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item"><summary>What is CFX Studios?</summary><div class="faq-answer">CFX Studios is a central place to discover our different digital projects, including creative resources, movie discovery and useful software.</div></details>
+    <details class="faq-item"><summary>What can I find on CFX Studios?</summary><div class="faq-answer">You can explore three areas: ScenePacks and editing assets for video creators, CFX Movies for browsing movie titles and collections, and CFX Downloader for video and audio downloading, conversion and compression.</div></details>
+    <details class="faq-item"><summary>What is ScenePacks?</summary><div class="faq-answer">ScenePacks is our creative resources destination. It brings together scene packs, presets, overlays, editing software, plugins and other assets that can help with your video projects.</div></details>
+    <details class="faq-item"><summary>What is CFX Movies?</summary><div class="faq-answer">CFX Movies is a movie catalogue where you can explore titles across languages and genres, find popular movies and browse curated collections.</div></details>
+    <details class="faq-item"><summary>What is CFX Downloader?</summary><div class="faq-answer">CFX Downloader is a tool for downloading, converting and compressing YouTube video and audio. It is available for Windows and Android.</div></details>
+    <details class="faq-item"><summary>Are these separate websites or one platform?</summary><div class="faq-answer">They are separate CFX projects, brought together under the CFX Studios website. Choose the destination that matches what you are looking for.</div></details>
+    <details class="faq-item"><summary>Can I use downloaded videos for any purpose?</summary><div class="faq-answer">Only download or use content when you own it, have permission, or are otherwise allowed to do so. Always respect copyright laws and the terms that apply to the platform and content.</div></details>
+    <details class="faq-item"><summary>How can I contact CFX Studios?</summary><div class="faq-answer">Use the contact email listed in the footer of this website to get in touch with us.</div></details>
+  </div>
+</section>
+
 <section class="wrap" id="contact"><div class="cta reveal"><div class="kicker">Stay connected</div><h2>Welcome to CFX Studios.</h2><p>Explore our platforms, discover what we're building and follow the CFX ecosystem as it grows.</p><a class="btn primary" href="#platforms">Explore the ecosystem ↗</a></div></section>
 </main>
 
