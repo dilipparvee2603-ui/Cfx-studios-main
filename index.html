@@ -192,7 +192,7 @@
 /* Replace orbit illustration with a compact three-part ecosystem strip */
 .hero-ecosystem-strip{width:min(690px,100%);margin:58px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .ecosystem-mini{min-height:112px;padding:18px 14px;border:1px solid #8bb8ff2b;border-radius:18px;background:linear-gradient(145deg,#111c30cc,#0b111dcc);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;box-shadow:inset 0 1px #ffffff08,0 12px 30px #0002}
-.mini-icon{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:#7fa8f51b;border:1px solid #8bb8ff35;color:#a9c5ff;font-size:17px}
+.ecosystem-mini{color:inherit;text-decoration:none;cursor:pointer;transition:transform .22s,border-color .22s,background .22s}.ecosystem-mini:hover,.ecosystem-mini:focus-visible{transform:translateY(-4px);border-color:#8bb8ff77;background:linear-gradient(145deg,#172641e8,#101a2ce8);outline:none}.mini-icon{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:#7fa8f51b;border:1px solid #8bb8ff35;color:#a9c5ff;font-size:17px}
 .mini-title{font-size:13px;font-weight:700;color:#edf3ff}
 .mini-sub{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#91a4c2}
 @media(max-width:430px){.hero-ecosystem-strip{gap:9px;margin-top:44px}.ecosystem-mini{min-height:94px;padding:12px 6px;border-radius:15px;gap:6px}.mini-icon{width:30px;height:30px;font-size:15px}.mini-title{font-size:11px}.mini-sub{font-size:9px;letter-spacing:.8px}}
@@ -374,9 +374,9 @@
 <header class="wrap nav"><a class="brand" href="/"><span class="mark">C</span><span class="brandname">CFX STUDIOS</span></a><nav class="navlinks"><a href="#platforms">Platforms</a><a href="#about">About</a><a href="#faqs">FAQs</a><a href="#connect" class="nav-cta">Connect with us ↗</a></nav></header>
 <main id="top">
 <section class="hero wrap"><div class="eyebrow"><span class="dot"></span> THE CFX ECOSYSTEM</div><h1>Every Editor Needs a<br><span>Friend.</span></h1><p>Get ScenePacks, editing software, plugins, 4K movies and a video downloader — all in one place, built around your creative journey.</p><div class="hero-actions"><a class="btn primary" href="https://assets.cfxstudios.in/" target="_blank" rel="noopener noreferrer">Get ScenePacks <span>↗</span></a><a class="btn secondary" href="https://movies.cfxstudios.in/" target="_blank" rel="noopener noreferrer">Get 4K Movies <span>↗</span></a></div><div class="hero-ecosystem-strip" aria-label="Explore the CFX ecosystem">
-  <div class="ecosystem-mini"><span class="mini-icon">✳</span><span class="mini-title">ScenePacks</span></div>
-  <div class="ecosystem-mini"><span class="mini-icon">▶</span><span class="mini-title">4K Movies</span></div>
-  <div class="ecosystem-mini"><span class="mini-icon">⌘</span><span class="mini-title">Video Downloader</span></div>
+  <a class="ecosystem-mini" href="https://assets.cfxstudios.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit ScenePacks"><span class="mini-icon">✳</span><span class="mini-title">ScenePacks</span></a>
+  <a class="ecosystem-mini" href="https://movies.cfxstudios.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit CFX Movies"><span class="mini-icon">▶</span><span class="mini-title">4K Movies</span></a>
+  <a class="ecosystem-mini" href="https://fetch.cfxstudios.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit CFX Downloader"><span class="mini-icon">⌘</span><span class="mini-title">Video Downloader</span></a>
 </div></section>
 <section class="section wrap" id="platforms"><div class="section-head reveal"><div class="kicker">Explore the ecosystem</div><h2>Everything under one roof.</h2><p>Three dedicated destinations, each built around a different part of the CFX experience. Choose where you want to go.</p></div>
 <div class="platforms">
